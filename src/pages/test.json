@@ -1,5 +1,5 @@
 {
   "layout": "../layouts/AboutLayout.astro",
   "title": "test",
-  "body": "testtt"
+  "body": "testtt **hahaha**\n\n### lol\n\n# lol lol"
 }
