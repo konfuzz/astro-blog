@@ -1,5 +1,9 @@
 {
   "title": "Мой крутой лендинг",
-  "heroVideo": "",
-  "vimeoLinks": []
+  "heroVideo": "/Я РАБОТАЮ В КРИПТОВАЛЮТЕ - Смотрящий (Димитреску) (360p, h264, youtube).mp4",
+  "vimeoLinks": [
+    "https://vimeo.com/22439234",
+    "https://vimeo.com/8248030",
+    "https://vimeo.com/108018156"
+  ]
 }
