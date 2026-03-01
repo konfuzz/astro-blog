@@ -1,5 +1,5 @@
 {
   "layout": "../layouts/AboutLayout.astro",
   "title": "test",
-  "body": "testtt **hahaha**\n\n### lol\n\n# lol lol"
+  "body": "testtt **hahaha**\n\n### lol\n\n# lol lol\n\n![](/morgenstern.png)"
 }
