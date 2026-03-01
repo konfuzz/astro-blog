@@ -34,5 +34,8 @@ content:
     path: src/pages/test.json
     fields:
       - { name: title, label: Title, type: string }
+      - { name: body, label: About text, type: rich-text }
       - { name: heroVideo, label: video, type: file, options: { input: public/assets, output: /assets } }
       - { name: vimeoLinks, label: vimeo links, type: string, list: true }
+      - { name: instaLink, label: Instagram Link, type: string }
+      - { name: phone, label: Phone Number, type: string }
