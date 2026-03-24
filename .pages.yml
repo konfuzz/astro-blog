@@ -33,20 +33,15 @@ content:
     type: file
     path: src/pages/test.json
     fields:
-      - name: sections
-        label: Sections
-        type: block
+      - name: authors
+        type: object
+        readonly: true
         list: true
-        blockKey: type
-        blocks:
-          - name: hero
-            fields:
-              - name: hero
-                type: string
-          - name: text
-            fields:
-              - name: body
-                type: rich-text
+        fields:
+          - name: name
+            type: string
+          - name: email
+            type: string
       - { name: title, label: Title, type: string }
       - { name: body, label: About text, type: rich-text }
       - { name: heroVideo, label: Hero video, type: file, options: { input: public/assets, output: /assets } }
