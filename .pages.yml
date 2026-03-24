@@ -35,7 +35,6 @@ content:
     fields:
       - name: authors
         type: object
-        readonly: true
         list: true
         fields:
           - name: name
