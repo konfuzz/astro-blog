@@ -36,12 +36,8 @@ content:
       - name: authors
         type: object
         fields:
-          - name: name
-            type: string
-          - name: email
-            type: string
-      - { name: title, label: Title, type: string }
-      - { name: body, label: About text, type: rich-text }
+          - { name: title, label: Title, type: string }
+          - { name: body, label: About text, type: rich-text }
       - { name: heroVideo, label: Hero video, type: file, options: { input: public/assets, output: /assets } }
       - { name: vimeoLinks, label: Vimeo links, type: object, list: true, fields: [ { name: vimeoLink, label: Vimeo link, type: string }, { name: vimeoTitle, label: Vimeo title, type: string } ] }
       - { name: instaLink, label: Instagram Link, type: string }
