@@ -40,7 +40,9 @@ content:
         blockKey: type
         blocks:
           - name: hero
-            component: hero
+            fields:
+              - name: hero
+                type: string
           - name: text
             fields:
               - name: body
