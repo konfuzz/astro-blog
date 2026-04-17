@@ -53,10 +53,10 @@ content:
       field: true
     view:
       fields: [ title, collection, comments, eventdate, date ]
-      primary: title
-      sort: [date, title]
+      primary: comments
+      sort: [eventdate, date, title]
       default:
-        sort: date
+        sort: eventdate
         order: desc
     fields:
       - { name: comments, label: Comments, type: string}
