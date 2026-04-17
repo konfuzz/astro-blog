@@ -42,3 +42,54 @@ content:
       - { name: vimeoLinks, label: Vimeo links, type: object, list: true, fields: [ { name: vimeoLink, label: Vimeo link, type: string }, { name: vimeoTitle, label: Vimeo title, type: string } ] }
       - { name: instaLink, label: Instagram Link, type: string }
       - { name: phone, label: Phone Number, type: string }
+      
+  - name: shares
+    label: Share Pages
+    type: collection
+    path: src/_data/share
+    format: json
+    filename:
+      template: "{primary}.json"
+      field: true
+    view:
+      fields: [ title, collection, date ]
+      primary: title
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - { name: title, label: Client Title, type: string, required: true }
+      - { name: password, label: Password (optional), type: string }
+      - { name: collection, label: Subtitle, type: string, required: true }
+      - { name: heroBg, label: Hero Background Image, type: image, required: true }
+      - { name: heroVideo, label: Hero Video URL (Big), type: string }
+      - name: partners
+        label: Partners
+        type: object
+        list: true
+        fields: 
+          - { name: name, label: Partner name, type: string, required: true}
+          - { name: link, label: Partner link, type: string}
+      - name: videos
+        label: Videos
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Video Name, type: string, required: true }
+          - { name: url, label: Vimeo Video URL, type: string, required: true }
+          - { name: poster, label: Video Poster, type: image, required: true }
+          - { name: downloadUrl, label: Download Link, type: string, required: true }
+
+      - name: seo
+        label: OG Settings
+        type: object
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: description, label: Description, type: text }
+          - { name: image, label: OG-image, type: image, description: Should be 1200x630px JPEG/PNG (under 5Mb) }
+
+      - name: date
+        type: date
+        label: Created at
+        readonly: true
