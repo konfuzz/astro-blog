@@ -52,7 +52,7 @@ content:
       template: "{primary}.json"
       field: true
     view:
-      fields: [ title, collection, comments, eventdate, date ]
+      fields: [ title, collection, comments, partners, eventdate, date ]
       primary: title
       sort: [date, title]
       default:
